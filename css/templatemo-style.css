@@ -85,7 +85,7 @@ hr {
 
 .sticky-navigation { opacity: 0.98; }
 .navbar-default {
-  background: #fff;
+  background: linear-gradient(#fff, #e3c6ff);
   border: none;
   -webkit-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
           box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.08);
@@ -155,6 +155,12 @@ hr {
 .tm-home-title,
  .tm-home-subtitle {
   text-transform: uppercase;
+ }
+ .tm-home-stay{
+  color: #eb5424;
+  font-weight: bold;
+  padding-bottom: 40px;
+  letter-spacing: 2px;
  }
 .tm-home-title { font-size: 60px; }
 .tm-home-subtitle {
