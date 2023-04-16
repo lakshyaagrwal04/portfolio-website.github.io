@@ -41,7 +41,7 @@ https://templatemo.com/tm-464-ultra-profile
 					<span class="icon icon-bar"></span>
 					<span class="icon icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">Lakshya Agarwal</a>
+				<a href="#" class="navbar-brand">My Profile</a>
 			</div>
 			<nav class="collapse navbar-collapse" id="rock-navigation">
 				<ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
@@ -65,7 +65,7 @@ https://templatemo.com/tm-464-ultra-profile
 					<div class="col-md-2 col-sm-1"></div>
 					<div class="col-md-8 col-sm-10">
 						<h1 class="tm-home-title"><strong>Lakshya Agarwal</strong></h1>
-						<h2 class="tm-home-subtitle">Web Developer</h2>
+						<h2 class="tm-home-stay">I'm <span class="text-slider"></span></h2>
 						<p>I am a <strong>UX Designer</strong> and <strong>Front-End Developer</strong> creating modern and responsive designs for <strong>Web</strong> and <strong>Mobile</strong>. Currently pursuing MCA from JECRC University, Jaipur. Let us work together.</p>
 						<a href="#resume" class="btn btn-default smoothScroll tm-view-more-btn">Let's Begin</a>
 					</div>
@@ -124,6 +124,7 @@ https://templatemo.com/tm-464-ultra-profile
 				</div>
 			</div>
 			<div class="row download-line">
+				<!-- <span style="font-size: 30px; color: blue" id="text">Web Designer</span> -->
 				<a href="resume-file.pdf" download="file">
 					<input type="button" value="Download Resume" class="btn download-cv">	
 				</a>
@@ -136,7 +137,10 @@ https://templatemo.com/tm-464-ultra-profile
 	<section id="about" class="tm-about">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-7">
+				<div class="col-md-6 col-sm-5">
+					<img draggable="false" class="tilt" src="images/my-img.png" width="240px" height="480px" alt="Lakshya">
+				</div>
+				<div class=" col-md-6  col-sm-7">
 					<div class="title">
 						<h2>My <strong>Certification</strong></h2>
 					</div>
@@ -181,18 +185,21 @@ https://templatemo.com/tm-464-ultra-profile
 					
 				</div>
 				<div class="col-md-8 col-sm-8">
-					<form action="#" method="post">
+					<form action="" method="">
 						<div class="col-md-12 col-sm-12">
-							<input class="form-control contact-input" type="text" placeholder="Your Name">
+							<input name="name" class="form-control contact-input" type="text" placeholder="Your Name">
 						</div>
 						<div class="col-md-12 col-sm-12">
-							<input class="form-control contact-input" type="email" placeholder="Your Email">
+							<input name="email" class="form-control contact-input" type="email" placeholder="Your Email">
 						</div>
 						<div class="col-md-12 col-sm-12">
-							<textarea class="form-control contact-input" placeholder="Your Message" rows="6"></textarea>
+							<input name="subject" class="form-control contact-input" type="subject" placeholder="Your Subject">
+						</div>
+						<div class="col-md-12 col-sm-12">
+							<textarea name="message" class="form-control contact-input" placeholder="Your Message" rows="6"></textarea>
 						</div>
 						<div class="col-md-offset-5 col-md-2 col-sm-offset-4 col-sm-4">
-							<input class="form-control contact-input-send" type="submit" value="SEND">
+							<input name="submit" class="form-control contact-input-send" type="submit" value="SEND">
 						</div>
 					</form>
 				</div>
@@ -211,8 +218,40 @@ https://templatemo.com/tm-464-ultra-profile
 	<script src="js/isotope.js"></script>
 	<script src="js/imagesloaded.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="js/VanillaTilt.js"></script>
+
+	<script type="text/javascript">
+		 VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 15,
+    });
+	</script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script> -->
+
+	<script src=
+		"js/typed.min.js">
+	</script>
+	
+	<!-- Add jquery cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+
+	<!-- Add this script for successful
+		implementation of typed.js -->
+	<script>
+		if ($(".text-slider").length == 1) {
+			
+
+			var typed = new Typed(".text-slider", {
+				strings: ["Web Developer","Coder","Web Designer"],
+				typeSpeed: 50,
+				loop: true,
+				backDelay: 900,
+				backSpeed: 30,
+			});
+		}
+	</script>
 
 
 
